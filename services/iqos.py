@@ -4,9 +4,9 @@ from service import Service
 
 class Iqos(Service):
     def send_sms(self):
-        nam9e = ''.join(random.choice(string.ascii_letters) for _ in range(6))
-        nam8e = ''.join(random.choice(string.ascii_letters) for _ in range(6))
+        emailrand = ''.join(random.choice(string.ascii_letters) for _ in range(6))
+        passwd = ''.join(random.choice(string.ascii_letters) for _ in range(9))
         self.session.post('https://ube.pmsm.org.ru/esb/iqos-reg/submission', json={
             'data': {'firstName': self.sms_text, 'lastName': 'Петров', 'phone': self.formatted_phone,
-                     'email': nam9e + '@gmail.com', 'password': nam8e,
-                     'passwordConfirm': nam8e}})
+                     'email': emailrand + '@gmail.com', 'password': passwd,
+                     'passwordConfirm': passwd}})
