@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 from service import Service
+import random
+import string
 
 
 class Iqos(Service):
