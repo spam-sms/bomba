@@ -42,7 +42,7 @@ SMS бомбер с приятным веб-интерфейсом.
     ```
 4. Установите все необходимые библиотеки и запустите скрипт:
     ```bash
-    py -m pip install -r requirements.txt
+    python -m pip install -r requirements.txt
     python main.py
     ```
 5. Если в вашем браузере не открылся веб-интерфейс, перейдите по ссылке в консоли.
