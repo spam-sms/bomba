@@ -3,5 +3,4 @@ from service import Service
 
 class WifiMetro(Service):
     def send_sms(self):
-        self.session.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': self.formatted_phone},
-                          headers={'App-ID': 'cabinet'})
+        self.session.get('https://go.zazumedia.ru/auth/wait/sms/' + self.formatted_phone + '?from_reg=1')
