@@ -1,6 +1,0 @@
-from service import Service
-
-
-class Zazumedia(Service):
-    def send_sms(self):
-        self.session.get('https://go.zazumedia.ru/auth/wait/sms/79000000000?from_reg=1')
